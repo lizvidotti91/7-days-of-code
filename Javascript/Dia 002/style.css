@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+
+.form{
+    align-items: center;
+    background: #283618;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    padding: 5vh;
+    width: 80vh;
+}
+
+.form .line{
+    display: block;
+    margin: 1vh 0;
+    width: 50%;
+}
+
+.form .line label{
+    color: #fefae0;
+    font-size: 2vh;
+}
+
+.form .line input{
+    line-height: 3vh;
+    margin-top: 1vh;
+    padding-left: 1vh;
+    width: 100%;
+}
+
+#send{
+    background-color: #dda15e;
+    border: none;
+    box-shadow: 2px 2px 10px #00000060;
+    color: #283618;
+    font-size: 2.5vh;
+    padding: 1vh;
+}
+
+.modal{
+    opacity: 1;
+    background-color: #dda15e;
+    border-radius: 1vh;
+    box-shadow: 2px 2px 10px #00000060;
+    height: 50vh;
+    padding: 3vh;
+    position: absolute;
+    width: 50vh;
+}
+
+.modal p{
+    font-size: 2.5vh;
+    margin: 1vh 0;
+    text-align: center;
+}
+
+.modal p:last-child{
+    margin-top: 4vh;
+    position: relative;
+}
+
+.opts.yes{
+    margin-right: 3vh;
+}
+
+#yes:checked::after,
+#no:checked::after{
+    font-size: 2.5vh;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10vh;
+    width: 100%;
+}
+
+#yes:checked::after{
+    content: "Muito bom! Continue estudando e você terá muito sucesso!";
+}
+
+#no:checked::after{
+    content: "Ah, que pena... Já tentou aprender outras linguagens?";
+}
