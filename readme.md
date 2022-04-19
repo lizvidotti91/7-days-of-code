@@ -19,6 +19,7 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 *   [Dia 001 - Trabalhando com Operadores Lógicos em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20001); 
 *   [Dia 002 - Trabalhando com Variáveis em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20002); 
+*   [Dia 002 - Trabalhando com Fluxo de Decisão em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20003); 
 
 ## Autora
 
