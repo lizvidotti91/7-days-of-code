@@ -1,4 +1,4 @@
-# Dia 04 - Trabalhando com Arrays e Coleções em Javascript
+# Dia 05 - Trabalhando com Arrays e Coleções em Javascript
 
 ## Tecnologias Usadas
 

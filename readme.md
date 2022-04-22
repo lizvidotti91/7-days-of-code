@@ -22,6 +22,7 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 *   [Dia 003 - Trabalhando com Fluxo de Decisão em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20003); 
 *   [Dia 004 - Trabalhando Loops e Randomização em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20004); 
 *   [Dia 005 - Trabalhando com Arrays e Coleções em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20005); 
+*   [Dia 006 - Trabalhando com remoção de Arrays em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20006); 
 
 ## Autora
 
