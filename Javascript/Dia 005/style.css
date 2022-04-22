@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+
+.form{
+    align-items: center;
+    background: #dda15e;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    padding: 5vh;
+    width: 80vh;
+}
+
+.form .line{
+    display: flex;
+    justify-content: center;
+    margin: 1vh 0;
+    text-align: center;
+    width: 50%;
+}
+
+.line:first-child{
+    font-size: 3vh;
+    margin-bottom: 3vh;
+}
+
+.line input[type=number],
+.line input[type=text]{
+    line-height: 5vh;
+    padding-left: 1vh;
+    width: 100%;
+}
+
+.line input:checked+label{
+    background-color: #72A1E5;
+}
+
+.new-item{
+    display: block !important;
+}
+
+.categories{
+    display: grid;
+    gap: 3vh;
+    grid-template-columns: auto auto;
+    list-style-type: none;
+    padding: 2vh;
+    width: 100%;
+}
+
+.categorie input{
+    display: none;
+}
+
+.categorie label{
+    background-color: #724008;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 1vh 2vh;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+li{
+    text-transform: capitalize;
+}
+
+.buttons input{
+    background-color: #54428E;
+    border: none;
+    box-shadow: 2px 2px 10px #00000060;
+    color: #fefae0;
+    cursor: pointer;
+    font-size: 2.5vh;
+    margin: 5vh auto;
+    padding: 1vh;
+    width: 40%;
+}
+
+.buttons .cancel{
+    background-color: grey;
+}
