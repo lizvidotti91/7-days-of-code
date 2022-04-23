@@ -17,6 +17,8 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ## Desafios
 
+### Lógica de Programação com Javascript
+
 *   [Dia 001 - Trabalhando com Operadores Lógicos em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20001); 
 *   [Dia 002 - Trabalhando com Variáveis em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20002); 
 *   [Dia 003 - Trabalhando com Fluxo de Decisão em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20003); 
@@ -24,6 +26,8 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 *   [Dia 005 - Trabalhando com Arrays e Coleções em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20005); 
 *   [Dia 006 - Trabalhando com remoção de Arrays em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20006); 
 *   [Dia 007 - Trabalhando com Funções em Javascript](https://github.com/lizvidotti91/7-days-of-code/tree/main/Javascript/Dia%20007); 
+
+## HTML e CSS
 
 ## Autora
 
