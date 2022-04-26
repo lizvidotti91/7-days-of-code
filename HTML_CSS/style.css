@@ -130,3 +130,45 @@ p{
     text-align: center;
     width: 50%;
 }
+
+.metricas-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.metricas-item h2{
+    color: var(--red);
+    line-height: 72px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    width: 50%;
+}
+
+.metricas-item p{
+    font-size: var(--regular-text);
+    line-height: 24px;
+    margin: 12px auto 0;
+    text-align: left;
+}
+
+.metricas-item p spam{
+    color: var(--grey-900);
+    display: block;
+    font-size: var(--medium-text);
+    font-weight: var(--medium);
+    margin-bottom: 8px;
+}
+
+#talents h1{
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 16px;
+    margin: 10vh auto 0;
+    padding: 4px 12px;
+    width: 10vw;
+}
+
+#talents img{
+    margin: 64px 10%;
+    width: 80%;
+}
