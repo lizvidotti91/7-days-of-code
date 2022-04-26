@@ -31,6 +31,8 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 * [Figma](https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1)
 
+* [Projeto](./HTML_CSS); 
+
 ## Autora
 
 | Foto                                       | Nome        | GitHub                                         | Likedin                                                 | E-mail                |
