@@ -113,12 +113,27 @@ h1{
     text-align: center;
 }
 
-h2{
+h2, h3, h4{
     color: var(--grey-900);
-    font-size: var(--large-text);
     font-weight: var(--semi-bold);
+    
+}
+
+h2{
+    font-size: var(--large-text);
     margin: 24px auto 0;
     text-align: center;
+}
+
+h3{
+    font-size: 20px;
+    margin: 32px auto 64px;
+    width: 50%;
+}
+
+h4{
+    font-size: var(--medium-text);
+    margin-bottom: 32px;
 }
 
 p{
@@ -171,4 +186,40 @@ p{
 #talents img{
     margin: 64px 10%;
     width: 80%;
+}
+
+.talents-list{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.talent-item{
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin: 24px 0;
+    padding: 24px 24px 28px;
+}
+
+.talent-item{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.talent-item:hover{
+    box-shadow: 0 0 10px #00000060;;
+}
+
+.talent-item:hover h4{
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.talent-item p{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    text-align: left;
+    width: 40%;
 }
