@@ -167,7 +167,7 @@ p{
     text-align: left;
 }
 
-.metricas-item p spam{
+.metricas-item p span{
     color: var(--grey-900);
     display: block;
     font-size: var(--medium-text);
@@ -222,4 +222,43 @@ p{
     margin: 0;
     text-align: left;
     width: 40%;
+}
+
+article{
+    margin: 0 auto;
+    width: 80%;
+}
+
+article h2{
+    color: var(--grey-900);
+    font-size: 36px;
+    line-height: 44px;
+    width: 100%;
+}
+
+figure{
+    margin: 32px auto 16px;
+    width: 10vh;
+}
+
+figure img{
+    height: 10vh;
+}
+
+figcaption p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+figcaption p span{
+    color: var(--grey-900);
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+#depoimentos{
+    padding: 10vh;
 }
