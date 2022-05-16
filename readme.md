@@ -29,6 +29,8 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ## HTML e CSS
 
+![Página Optimus Tech](./HTML_CSS/images/optimus_tech.gif?raw=true "Página Optimus Tech")
+
 * [Figma](https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS?node-id=0%3A1)
 
 * [Projeto](./HTML_CSS); 
