@@ -35,6 +35,14 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 * [Projeto](./HTML_CSS); 
 
+## Javascript e DOM
+
+### Dia 01
+
+![Dia 01](./Javascript%20e%20DOM/dia_1.gif?raw=true "Dia 01")
+
+[Código do Projeto](./Javascript%20e%20DOM/); 
+
 ## Autora
 
 | Foto                                       | Nome        | GitHub                                         | Likedin                                                 | E-mail                |
