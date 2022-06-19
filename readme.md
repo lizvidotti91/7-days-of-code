@@ -37,9 +37,13 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ## Javascript e DOM
 
-### Dia 01
+### Dia 01 - Construção do Formulário e Captura dos Dados
 
 ![Dia 01](./Javascript%20e%20DOM/dia_1.gif?raw=true "Dia 01")
+
+### Dia 02 - Validação do Formulário
+
+![Dia 02](./Javascript%20e%20DOM/dia_2.gif?raw=true "Dia 02")
 
 [Código do Projeto](./Javascript%20e%20DOM/); 
 

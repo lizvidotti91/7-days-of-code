@@ -12,18 +12,20 @@
 
 <body>
     <section class="wrapper-form">
-        <h1>Cadastre-se</h1>
-        <form class="form">
-            <label for="form-name">Seu nome
-                <input type="text" name="form-name" id="form-name" required>
-            </label>
+        <fieldset>
+            <legend>Cadastre-se</legend>
+            <form class="form">
+                <label for="form-name" id="label-name">Seu nome
+                    <input type="text" name="form-name" id="form-name" required>
+                </label>
 
-            <label for="form-birth">Sua data de nascimento
-                <input type="date" name="form-birth" id="form-birth" required>
-            </label>
+                <label for="form-birth" id="label-birth">Sua data de nascimento
+                    <input type="date" name="form-birth" id="form-birth" required>
+                </label>
 
-            <button type="submit">Salvar</button>
-        </form>
+                <input type="submit" value="Salvar" class="btn-submit">
+            </form>
+        </fieldset>
     </section>
     <section class="result"></section>
 </body>

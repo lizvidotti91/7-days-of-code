@@ -6,49 +6,65 @@
 }
 
 .wrapper-form{
+    margin: 0 auto;
     padding: 5vh;
-    width: 100vw;
+    width: 50vw;
 }
 
-.wrapper-form h1{
-    font-size: 8vh;
+.wrapper-form fieldset{
+    border: 2px solid #00000060;
+    border-radius: 2vh;
+    padding: 1vw;
+}
+
+.wrapper-form fieldset legend{
+    font-size: 6vh;
+    padding: 0 1vw;
+    text-align: center;
 }
 
 .form{
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
 }
 
 .form label{
     display: block;
     font-size: 2vh;
-    margin: 1vh auto;
-    width: 50%;
+    margin: 2vh auto;
+    width: 60%;
+}
+
+.form label span{
+    color: red;
+    display: block;
+    font-size: 1.5vh;
 }
 
 .form input{
-    line-height: 4vh;
-    font-size: 2.2vh;
-    padding-left: 1vw;
+    border: 2px solid #00000060;
+    border-radius: 4vh;
+    line-height: 5vh;
+    font-size: 3vh;
+    padding: 0 2vw;
     width: 100%;
 }
 
-.form button{
+.btn-submit{
     background-color: blueviolet;
-    border: none;
+    border: none !important;
     border-radius: 1vh;
     color: whitesmoke;
     cursor: pointer;
     display: block;
-    font-size: 2.2vh;
+    font-size: 2.2vh !important;
     margin: 0 auto;
-    padding: 1vh 2vh;
     transition: .3s;
-    width: 20%;
+    width: 20% !important;
 }
 
-.form button:hover{
-    box-shadow: 1px 1px 10px #00000060;
+.btn-submit:hover{
+    box-shadow: 1px 1px 8px #00000090;
 }
 
 .result{
