@@ -68,5 +68,29 @@
 }
 
 .result{
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.result table{
+    height: 10vh;
+    margin: 0 auto;
+    overflow: scroll;
+    width: 90%;
+}
+
+.result table tr{
+    font-size: 2vh;
+}
+
+.result table tr th{
+    font-size: 2.5vh;
+}
+
+.result table tr td,
+.result table tr th{
+    border: 2px solid #00000060;
+    padding: 1vh 0;
     text-align: center;
 }
+

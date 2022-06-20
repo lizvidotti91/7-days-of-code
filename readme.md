@@ -45,6 +45,10 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ![Dia 02](./Javascript%20e%20DOM/dia_2.gif?raw=true "Dia 02")
 
+### Dia 03 - Armazenar os dados do formulário no LocalStorage do navegador
+
+![Dia 03](./Javascript%20e%20DOM/dia_3.gif?raw=true "Dia 03")
+
 [Código do Projeto](./Javascript%20e%20DOM/); 
 
 ## Autora

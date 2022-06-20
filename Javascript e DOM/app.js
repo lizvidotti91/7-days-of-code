@@ -1,5 +1,5 @@
 let form = document.querySelector('.wrapper-form');
-let result = document.querySelector('.result');
+let table = document.querySelector('.result table');
 
 let labelName = document.querySelector('#label-name');
 let name = document.querySelector('#form-name');
@@ -7,6 +7,20 @@ let labelBirth = document.querySelector('#label-birth');
 let birth = document.querySelector('#form-birth');
 
 let span = document.createElement('span');
+
+function getData() {
+    const list = JSON.parse(localStorage.getItem('pessoas')) || [];
+
+    console.log(list);
+    for (index in list) {
+        table.innerHTML += `
+            <tr>
+                <td>${list[index].nome}</td>
+                <td>${list[index].nascimento.split('-').reverse().join('/')}</td >
+            </tr >
+        `
+    }
+}
 
 function isNameValid() {
     span.textContent = '';
@@ -27,15 +41,33 @@ function isNameValid() {
     }
 }
 
-function getData(e) {
+function setData(e) {
     e.preventDefault();
-    //isNameValid();
     if (isNameValid()) {
-        result.textContent = `${name.value} nasceu em ${birth.value.split('-').reverse().join('/')}`;
+        const list = JSON.parse(localStorage.getItem('pessoas')) || [];
+        console.log(list);
+        let item = {
+            'nome': name.value,
+            'nascimento': birth.value
+        }
+        list.push(item);
+
+        localStorage.setItem('pessoas', JSON.stringify(list));
+        console.log(localStorage.getItem('pessoas'));
+
+        table.innerHTML = `
+            <tr>
+                <th>Nome</th>
+                <th>Nascimento</th>
+            </tr>
+            `;
+        getData();
+        name.value = '';
+        birth.value = '';
     }
 }
 
-form.addEventListener('submit', getData);
+form.addEventListener('submit', setData);
 
 name.oninvalid = function (evt) {
     evt.preventDefault();
@@ -54,3 +86,5 @@ birth.oninvalid = function (evt) {
         console.log(this.id);
     }
 };
+
+window.onload = getData();
