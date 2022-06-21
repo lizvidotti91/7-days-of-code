@@ -81,6 +81,7 @@
 
 .result table tr{
     font-size: 2vh;
+    position: relative;
 }
 
 .result table tr th{
@@ -92,5 +93,60 @@
     border: 2px solid #00000060;
     padding: 1vh 0;
     text-align: center;
+}
+
+.result table tr td input:disabled,
+.result table tr td input{
+    color: black;
+    font-size: 2vh;
+}
+
+.result table tr td input:disabled{
+    border: none;
+}
+
+.result table tr td input{
+    padding: 1vh;
+}
+
+.no-border{
+    border: none !important;
+}
+
+.btn-edit:disabled,
+.btn-edit{
+    background-color: blueviolet;
+    border: none;
+    border-radius: 1vh;
+    color: whitesmoke !important;
+    cursor: pointer;
+    padding: 1vh 0;
+    transition: .3s;
+    width: 8vw;
+}
+
+.btn-edit:disabled{
+    opacity: .6;
+}
+
+.edit-icon{
+    left: 2%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.edit-icon svg{
+    fill: #8a2be280;
+    height: 2.5vh;
+    transition: .3s;
+}
+
+.edit-icon svg:hover{
+    fill: blueviolet;
+}
+
+.no-border button:hover{
+    box-shadow: 1px 1px 10px #00000060;
 }
 
