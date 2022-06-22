@@ -49,9 +49,13 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ![Dia 03](./Javascript%20e%20DOM/dia_3.gif?raw=true "Dia 03")
 
-### Dia 04 - Editar dados do formulário e armazenar os novos valores no LocalStorage
+### Dia 04 - Editar dados da tabela e armazenar os novos valores no LocalStorage
 
 ![Dia 04](./Javascript%20e%20DOM/dia_4.gif?raw=true "Dia 04")
+
+### Dia 05 - Removendo dados da tabela e do LocalStorage
+
+![Dia 05](./Javascript%20e%20DOM/dia_5.gif?raw=true "Dia 05")
 
 [Código do Projeto](./Javascript%20e%20DOM/); 
 
