@@ -1,23 +1,24 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.wrapper-form{
+#wrapper-form{
     margin: 0 auto;
     padding: 5vh;
     width: 50vw;
 }
 
-.wrapper-form fieldset{
+#wrapper-form fieldset{
     border: 2px solid #00000060;
     border-radius: 2vh;
     padding: 1vw;
 }
 
-.wrapper-form fieldset legend{
+#wrapper-form fieldset legend{
     font-size: 6vh;
     padding: 0 1vw;
     text-align: center;
@@ -110,49 +111,73 @@ span{
     box-shadow: 1px 1px 8px #00000090;
 }
 
-.result{
+#result{
+    display: flex;
+    height: 40vh;
     margin: 0 auto;
-    width: 50vw;
+    padding: 0 30vh;
+    width: 100vw;
 }
 
-.result table{
-    height: 10vh;
-    margin: 0 auto;
-    overflow: scroll;
+#result table{
+    display: block;
+    height: 100%;
+    overflow-y: scroll;
     width: 60%;
 }
 
-.result table tr{
-    font-size: 2vh;
-    position: relative;
-}
-
-.result table tr th{
-    font-size: 2.5vh;
-}
-
-.result table tr td,
-.result table tr th{
+#result .current-birth{ 
     border: 2px solid #00000060;
-    padding: 1vh 0;
+    height: 100%;
+    margin: 0 5vh;
+    overflow-y: scroll;
+    padding: 1vh;
+    width: 40%;
+}
+
+.current-birth h2,
+.current-birth ul{
+    font-size: 2.5vh;
     text-align: center;
 }
 
-.result table tr td input:disabled,
-.result table tr td input{
+.current-birth ul li{
+    padding: 1vh 0;
+}
+
+#result table tr{
+    font-size: 2vh;
+    position: relative;
+    width: 100%;
+}
+
+#result table tr th{
+    font-size: 2.5vh;
+}
+
+#result table tr td,
+#result table tr th{
+    border: 2px solid #00000060;
+    padding: 1vh 0;
+    text-align: center;
+    width: 80%;
+}
+
+#result table tr td input:disabled,
+#result table tr td input{
     color: black;
     font-size: 2vh;
 }
 
-.result table tr td input:disabled{
+#result table tr td input:disabled{
     border: none;
 }
 
-.result table tr td input{
+#result table tr td input{
     padding: 1vh;
 }
 
-.result table tr td:first-child input{
+#result table tr td:first-child input{
     margin-left: 2vw;
 }
 

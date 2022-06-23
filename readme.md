@@ -57,6 +57,10 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ![Dia 05](./Javascript%20e%20DOM/dia_5.gif?raw=true "Dia 05")
 
+### Dia 06 - Estilização
+
+![Dia 06](./Javascript%20e%20DOM/dia_6.jpg?raw=true "Dia 06")
+
 [Código do Projeto](./Javascript%20e%20DOM/); 
 
 ## Autora

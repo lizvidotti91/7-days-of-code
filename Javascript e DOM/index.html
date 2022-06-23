@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <section class="wrapper-form">
+    <section id="wrapper-form">
         <fieldset>
-            <legend>Cadastre-se</legend>
+            <legend>Novo cadastro</legend>
             <form class="form">
                 <label for="form-name" id="label-name">Seu nome
                     <input type="text" name="form-name" id="form-name" required>
@@ -28,13 +28,17 @@
             </form>
         </fieldset>
     </section>
-    <section class="result">
+    <section id="result">
         <table>
             <tr>
                 <th>Nome</th>
                 <th>Nascimento</th>
             </tr>
         </table>
+        <div class="current-birth">
+            <h2>Aniversariantes do mês</h2>
+            <ul></ul>
+        </div>
     </section>
     <section class="pop-up">
         <h2>Tem certeza de que deseja remover este item?</h2>

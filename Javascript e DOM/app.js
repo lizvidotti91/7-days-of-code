@@ -1,5 +1,5 @@
-let form = document.querySelector('.wrapper-form');
-let table = document.querySelector('.result table');
+let form = document.querySelector('#wrapper-form');
+let table = document.querySelector('#result table');
 
 let labelName = document.querySelector('#label-name');
 let name = document.querySelector('#form-name');
@@ -10,10 +10,30 @@ let span = document.createElement('span');
 
 let indexToRemove;
 
+function birhtMonth() {
+    let date = new Date();
+    let currentMonth = date.getMonth() + 1;
+
+    const list = JSON.parse(localStorage.getItem('pessoas'));
+    if (list) {
+        for (index in list) {
+            let month = list[index].nascimento.split('-').splice(1, 1);
+            if (month == currentMonth) {
+                let newLine = document.createElement('li');
+                newLine.textContent = `
+                    ${list[index].nascimento.split('-').splice(2, 1)} - 
+                    ${list[index].nome}
+                `;
+                document.querySelector('.current-birth ul').appendChild(newLine);
+            }
+        }
+    }
+}
+
 function popUp(index) {
     document.querySelector('.pop-up').style.display = 'flex';
     form.style.opacity = .5;
-    document.querySelector('.result').style.opacity = .5;
+    document.querySelector('#result').style.opacity = .5;
     indexToRemove = index;
 }
 
@@ -31,13 +51,13 @@ function removeRow() {
     getData();
     document.querySelector('.pop-up').style.display = 'none';
     form.style.opacity = 1;
-    document.querySelector('.result').style.opacity = 1;
+    document.querySelector('#result').style.opacity = 1;
 }
 
 function cancelAction() {
     document.querySelector('.pop-up').style.display = 'none';
     form.style.opacity = 1;
-    document.querySelector('.result').style.opacity = 1;
+    document.querySelector('#result').style.opacity = 1;
 }
 
 function editRow(index) {
@@ -139,6 +159,8 @@ function setData(e) {
             </tr>
             `;
         getData();
+        document.querySelector('.current-birth ul').innerHTML = ''
+        birhtMonth();
         name.value = '';
         birth.value = '';
     }
@@ -165,3 +187,4 @@ birth.oninvalid = function (evt) {
 };
 
 window.onload = getData();
+window.onload = birhtMonth();
