@@ -103,32 +103,37 @@ section{
     border-radius: 3vh;
     box-shadow: 32.8387px 24.5482px 79px rgba(0, 0, 0, 0.15), 23.8851px 17.855px 53.2479px rgba(0, 0, 0, 0.121406), 16.6246px 12.4276px 34.4391px rgba(0, 0, 0, 0.10125), 10.9035px 8.15079px 21.3701px rgba(0, 0, 0, 0.0867188), 6.56775px 4.90965px 12.8375px rgba(0, 0, 0, 0.075), 3.46346px 2.58907px 7.6377px rgba(0, 0, 0, 0.0632813), 1.4367px 1.07399px 4.56719px rgba(0, 0, 0, 0.04875), 0.333519px 0.249318px 2.42246px rgba(0, 0, 0, 0.0285938);
     display: flex;
+    height: 30vh;
     justify-content: space-between;
     margin: 4vh auto;
     padding: 3vh;
     width: 100%;
 }
 
-.card-movie img{
-    border-radius: 50%;
+.img-movie{
+    border-radius: 3vh;
     filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.3));
     height: 100%;
+    width: auto;
 }
 
 .info{
-    
+    width: 30%;
 }
 
 .info-title{
     color: var(--font-color-primary);
     font-size: var(--font-medium);
     font-weight: var(--font-500);
+    text-align: justify;
+    width: 100%;
 }
 
 .info-plus{
     display: flex;
     justify-content: space-between;
     margin-top: 1vh;
+    width: 100%;
 }
 
 .info-plus span{
@@ -169,6 +174,9 @@ section{
     color: var(--font-color-secondary);
     font-size: var(--font-medium);
     font-weight: var(--font-500);
+    max-height: 100%;
+    overflow: hidden;
     text-align: justify;
-    width: 50%;
+    text-overflow: ellipsis;
+    width: 45%;
 }
