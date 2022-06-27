@@ -69,6 +69,10 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ![Dia 01](./Javascript_Consumindo%20uma%20API/images/dia_1.gif?rae=true "Dia 01")
 
+### Dia 02 - Renderizando a lista de filmes no Javascript
+
+![Dia 02](./Javascript_Consumindo%20uma%20API/images/dia_2.gif?rae=true "Dia 02")
+
 [Código do Projeto](./Javascript_Consumindo%20uma%20API/); 
 
 ## Autora
