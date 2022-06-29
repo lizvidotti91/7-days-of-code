@@ -36,6 +36,8 @@
 let movies = [];
 const checkFavorite = document.querySelector('#check-favorite');
 const wrapperMovies = document.querySelector('.wrapper-movies');
+const searchFilm = document.querySelector('#search-film');
+const btnSearch = document.querySelector('#opt-search');
 
 function renderMovie(movie) {
     let favs = JSON.parse(localStorage.getItem('filmes')) || [];
@@ -45,8 +47,11 @@ function renderMovie(movie) {
             checkmark = `<input type="checkbox" name="fav" id="fav-${movie.id}" checked>`;
         }
     });
+    let imgMovie = movie.poster_path == null ?
+        './images/film-icon.png'
+        : `https://image.tmdb.org/t/p/original/${movie.poster_path}`
     return (`
-            <img src="https://image.tmdb.org/t/p/original/${movie.poster_path}" alt="Cartaz do filme ${movie.original_title}" class="img-movie">
+            <img src="${imgMovie}" alt="Cartaz do filme ${movie.original_title}" class="img-movie">
             <div class="info">
                 <p class="info-title">
                     ${movie.title}
@@ -63,8 +68,30 @@ function renderMovie(movie) {
                     </span>
                 </p>
             </div>
-            <div class="description">${movie.overview.length > 435 ? movie.overview.substr(0, 435).concat('...') : movie.overview}</div>
+            <div class="description">${movie.overview.length > 435 ? movie.overview.substr(0, 435).concat('...') : movie.overview == '' ? 'Não há informações sobre esse filme' : movie.overview}</div>
     `);
+}
+
+async function clickFind() {
+    const URL = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=pt-BR&query=${searchFilm.value}`;
+    let response = await fetch(URL);
+    let data = await response.json();
+
+    movies = data.results;
+    console.log(movies);
+    wrapperMovies.innerHTML = '';
+    movies.forEach(movie => {
+        let card = document.createElement('article');
+        card.classList.add('card-movie');
+        card.innerHTML = renderMovie(movie);
+        wrapperMovies.appendChild(card);
+    })
+}
+
+function findFilm(event) {
+    if (event.code == 'Enter') {
+        clickFind();
+    }
 }
 
 async function allMovies() {
@@ -124,5 +151,8 @@ checkFavorite.addEventListener('click', () => {
         allMovies();
     }
 });
+
+searchFilm.addEventListener('keyup', findFilm);
+btnSearch.addEventListener('click', clickFind);
 
 window.onload = allMovies();

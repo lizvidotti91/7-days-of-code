@@ -73,6 +73,14 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ![Dia 02](./Javascript_Consumindo%20uma%20API/images/dia_2.gif?rae=true "Dia 02")
 
+### Dia 03 - Consumindo a API do The Movie DB e renderizando a página de Filmes Populares
+
+![Dia 03](./Javascript_Consumindo%20uma%20API/images/dia_3.gif?rae=true "Dia 03")
+
+### Dia 04 - Buscando filmes pela Barra de Pesquisa
+
+[![Dia 04](./Javascript_Consumindo%20uma%20API/images/dia_4.jpg)](./Javascript_Consumindo%20uma%20API/images/dia_4.mp4)
+
 [Código do Projeto](./Javascript_Consumindo%20uma%20API/); 
 
 ## Autora
