@@ -105,7 +105,7 @@ async function allMovies() {
 
     movies.forEach(movie => {
         let card = document.createElement('article');
-        card.classList.add('card-movie');
+        card.classList.add(`card-movie`, `card-movie-${movie.id}`);
         card.innerHTML = renderMovie(movie);
         wrapperMovies.appendChild(card);
     });
@@ -119,6 +119,9 @@ function newFav(id) {
 
     if (newArr.length != favs.length) {
         localStorage.setItem('filmes', JSON.stringify(newArr));
+        let cardFav = document.querySelector(`.card-movie-${id}`);
+        cardFav.style.display = 'none';
+        console.log(cardFav);
         return (console.log("Retirado dos Favoritos"))
     }
 
@@ -138,7 +141,7 @@ function allFavorite() {
     //console.log(fav)
     fav.forEach(movie => {
         let card = document.createElement('article');
-        card.classList.add('card-movie');
+        card.classList.add(`card-movie`, `card-movie-${movie.id}`);
         card.innerHTML = renderMovie(movie);
         wrapperMovies.appendChild(card);
     });
