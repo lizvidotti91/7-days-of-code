@@ -79,7 +79,7 @@ Melhorar as habilidades de lógica de programação fazendo mini-projetos diári
 
 ### Dia 04 - Buscando filmes pela Barra de Pesquisa
 
-[![Dia 04](./Javascript_Consumindo%20uma%20API/images/dia_4.jpg)](./Javascript_Consumindo%20uma%20API/images/dia_4.mp4)
+![Dia 04](./Javascript_Consumindo%20uma%20API/images/dia_4_teste.gif?rae=true "Dia 04")
 
 [Código do Projeto](./Javascript_Consumindo%20uma%20API/); 
 
